@@ -4,9 +4,11 @@ import React, {Suspense} from 'react'
 import useSceneStore from '../stores/sceneStore'
 
 export default function ThreeCanvas() {
-  const SceneComponent = useSceneStore(
-    state => state.scenes.find(s => s.id === state.currentSceneId)?.scene
+  const currentScene = useSceneStore(
+    state => state.scenes.find(s => s.id === state.currentSceneId)
   )
+  const SceneComponent = currentScene?.scene
+  const OverlayComponent = currentScene?.overlay
 
   return (
     <>
@@ -17,6 +19,7 @@ export default function ThreeCanvas() {
           </Suspense>
         </Canvas>
       )}
+      {OverlayComponent && React.createElement(OverlayComponent)}
       <Loader />
     </>
   )

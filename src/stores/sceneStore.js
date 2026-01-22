@@ -3,10 +3,11 @@ import create from 'zustand'
 // import ConnectPageOverlay from "../modules/networking_focus/connect_page/ConnectPageOverlay";
 // import LandingArea from "../modules/simple_playable_areas/LandingArea";
 import Courtyard from "../modules/courtyard/Courtyard";
+import CharacterControllerUI from "../modules/courtyard/components/CharacterControllerUI";
 
 const scenes = [
   // { id: 'connectPage', name: 'Join Game', scene: ConnectPage, overlay: ConnectPageOverlay },
-  { id: 'courtyard', name: 'Courtyard', scene: Courtyard },
+  { id: 'courtyard', name: 'Courtyard', scene: Courtyard, overlay: CharacterControllerUI },
   // { id: 'lobby', name: 'Lobby', scene: Lobby },
   // { id: 'office', name: 'Office', scene: Office },
   // { id: 'hallway', name: 'Hallway', scene: Hallway },
