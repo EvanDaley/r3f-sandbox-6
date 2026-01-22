@@ -1,50 +1,62 @@
 {
   "name": "r3f-sandbox-6",
-  "version": "1.0.0",
-  "homepage": "https://evandaley.github.io/r3f-sandbox-6/",
-  "main": "src/index.js",
-  "dependencies": {
-    "@pmndrs/branding": "0.0.8",
-    "@react-three/drei": "^9.92.7",
-    "@react-three/fiber": "^8.15.12",
-    "@react-three/postprocessing": "2.14.9",
-    "@react-three/rapier": "^2.2.0",
-    "alea": "^1.0.1",
-    "ecctrl": "^1.0.97",
-    "gh-pages": "^3.2.3",
-    "leva": "0.9.35",
-    "mitt": "^3.0.1",
-    "peerjs": "1.5.5",
-    "react": "18.2.0",
-    "react-colorful": "^5.6.1",
-    "react-dom": "18.2.0",
-    "react-player": "^2.9.0",
-    "react-scripts": "5.0.1",
-    "simplex-noise": "^4.0.3",
-    "three": "0.160.0",
-    "valtio": "^2.2.0",
-    "web-vitals": "^1.1.2"
+  "version": "1.0.97",
+  "author": "Evandaley",
+  "description": "A React Three Fiber app for experimenting with different workflows and rendering techniques.",
+  "keywords": [
+    "react",
+    "three",
+    "threejs",
+    "react-three-fiber",
+    "control",
+    "character-control"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evandaley/r3f-sandbox-6.git"
   },
+  "files": [
+    "dist/*"
+  ],
+  "type": "module",
+  "types": "./dist/Ecctrl.d.ts",
+  "main": "./dist/Ecctrl.cjs",
+  "module": "./dist/Ecctrl.js",
+  "exports": {
+    "types": "./dist/Ecctrl.d.ts",
+    "require": "./dist/Ecctrl.cjs",
+    "import": "./dist/Ecctrl.js"
+  },
+  "sideEffects": false,
   "devDependencies": {
-    "concurrently": "^9.2.0",
-    "cross-env": "^10.0.0"
+    "@react-three/drei": "^10.3.0",
+    "@react-three/fiber": "^9.1.2",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "r3f-perf": "^7.2.3",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "@react-spring/three": "^10.0.1",
+    "@types/three": "^0.177.0",
+    "ecctrl": "^1.0.97",
+    "leva": "^0.10.0",
+    "three": ">=0.177.0",
+    "zustand": "^5.0.1"
+  },
+  "peerDependencies": {
+    "@react-three/drei": ">=9.0",
+    "@react-three/fiber": ">=9.0",
+    "@react-three/rapier": ">=2.0.0",
+    "react": ">=19.1.0",
+    "react-dom": ">=19.1.0",
+    "three": ">=0.177.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "dev": "npm run dev:dual",
-    "dev:host": "cross-env PORT=3001 REACT_APP_ROLE=host react-scripts start",
-    "dev:client": "cross-env PORT=3002 REACT_APP_ROLE=client react-scripts start",
-    "dev:dual": "concurrently \"npm run dev:host\" \"npm run dev:client\"",
-    "deploy": "gh-pages -d build",
-    "ship": "npm run build && npm run deploy",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "preview": "vite preview"
+  }
 }
