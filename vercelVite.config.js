@@ -5,7 +5,7 @@ const isCodeSandbox =
 
 export default {
   plugins: [react()],
-  root: "example/",
+  root: "src/",
   publicDir: "../public/",
   base: "./",
   server: {

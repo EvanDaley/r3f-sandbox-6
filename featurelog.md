@@ -6,7 +6,7 @@
 
 `<Ecctrl mode="FixedCamera">`
 
-[![screenshot](example/EcctrlFixedCamera.png)]
+[![screenshot](src/modules/movement-demo/EcctrlFixedCamera.png)]
 
 ### (2024-1-1) EcctrlMode:
 
@@ -27,7 +27,7 @@ setMoveToPoint(point) // "point" is a vec3 value
 
 - Here is a simple click-to-move example: [Ecctrl CodeSandbox](https://codesandbox.io/p/sandbox/ecctrl-pointtomove-m9z6xh)
 
-[![screenshot](example/ecctrlClickToMove.png)](https://codesandbox.io/p/sandbox/ecctrl-pointtomove-m9z6xh)
+[![screenshot](src/modules/movement-demo/ecctrlClickToMove.png)](https://codesandbox.io/p/sandbox/ecctrl-pointtomove-m9z6xh)
 
 ### (2023-11-18) EcctrlJoystick:
 
@@ -52,7 +52,7 @@ import Ecctrl, {EcctrlJoystick} from 'ecctrl'
 
 - Also, here is another [Ecctrl CodeSandbox](https://codesandbox.io/s/ecctrl-with-animations-nr4493) showcasing character animation functionality.
 
-[![screenshot](example/ecctrlJoystick.png)](https://codesandbox.io/s/ecctrl-w-o-animations-3k3zxt)
+[![screenshot](src/modules/movement-demo/ecctrlJoystick.png)](https://codesandbox.io/s/ecctrl-w-o-animations-3k3zxt)
 
 ### (2023-10-02) Pmndrs/ecctrl & npm package:
 
@@ -79,7 +79,7 @@ import Ecctrl, {EcctrlAnimation} from 'ecctrl'
 
 - Also, here is another [Ecctrl CodeSandbox](https://codesandbox.io/s/ecctrl-with-animations-nr4493) showcasing character animation functionality.
  
-[![screenshot](example/PmndrsEcctrl.png)](https://codesandbox.io/s/ecctrl-w-o-animations-3k3zxt)
+[![screenshot](src/modules/movement-demo/PmndrsEcctrl.png)](https://codesandbox.io/s/ecctrl-w-o-animations-3k3zxt)
 
 ### (2023-09-13) New Character & Physics Enhancements:
 
@@ -90,7 +90,7 @@ import Ecctrl, {EcctrlAnimation} from 'ecctrl'
   - Character's free fall height now impacts on platform reaction forces
   - Add extra downward force upon character jumps for more realistic physics
   
-  [![screenshot](example/UnclePetePhysicsEnhance.png)](https://github.com/erdongchen-andrew/CharacterControl/tree/main/example)
+  [![screenshot](src/modules/movement-demo/UnclePetePhysicsEnhance.png)](https://github.com/erdongchen-andrew/CharacterControl/tree/main/example)
 
 ### (2023-08-28) Character Animations:
 
@@ -99,7 +99,7 @@ import Ecctrl, {EcctrlAnimation} from 'ecctrl'
 - Fine-tune slope angle's impact on jump direction (fully customizable)
 - Tailor the rejection velocity for sudden changes in movement direction (fully customizable)
 
-  [![screenshot](example/CharacterAnimation.png)](https://github.com/erdongchen-andrew/CharacterControl/tree/main/example)
+  [![screenshot](src/modules/movement-demo/CharacterAnimation.png)](https://github.com/erdongchen-andrew/CharacterControl/tree/main/example)
 
 ### (2023-08-10) Camera Enhancement:
 

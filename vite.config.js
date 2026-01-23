@@ -7,7 +7,7 @@ const isCodeSandbox =
 
 const dev = defineConfig({
   plugins: [react()],
-  root: "example/",
+  root: "src/",
   publicDir: "../public/",
   base: "./",
   server: {

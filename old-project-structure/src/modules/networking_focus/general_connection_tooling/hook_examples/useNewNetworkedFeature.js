@@ -1,8 +1,8 @@
-﻿// This is a pseudocode example of a hook that sends and receives its own payloads.
+﻿// This is a pseudocode src of a hook that sends and receives its own payloads.
 // It has a switch statement for the types of messages it processes.
 // On scene initialization, it connects itself to the message bus.
 // This doesn't do anything - it's intended as pseudocode to describe the pattern.
-// For a slightly more comprehensive example, see useNetworkedFeature and useNetworkedPlayer
+// For a slightly more comprehensive src, see useNetworkedFeature and useNetworkedPlayer
 
 // useNetworkedFeature.js
 export function useNewNetworkedFeature(group) {

@@ -1,4 +1,4 @@
-﻿// This is a working example of a hook that sends a payload and receives it on all clients through the message bus.
+﻿// This is a working src of a hook that sends a payload and receives it on all clients through the message bus.
 // On scene initialization, it connects itself to the message bus.
 // On interval, it publishes and routes a message to itself across every connected client.
 
