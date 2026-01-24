@@ -2,19 +2,19 @@ import { Grid, KeyboardControls } from "@react-three/drei";
 import { Perf } from "r3f-perf";
 import { Physics } from "@react-three/rapier";
 import Ecctrl from "ecctrl";
-import Floor from "./Floor.jsx";
-import Lights from "./Lights.jsx";
-import Steps from "./Steps.jsx";
-import Slopes from "./Slopes.jsx";
-import RoughPlane from "./RoughPlane.jsx";
-import RigidObjects from "./RigidObjects.jsx";
-import FloatingPlatform from "./FloatingPlatform.jsx";
-import DynamicPlatforms from "./DynamicPlatforms.jsx";
-import ShotCube from "./ShotCube.jsx";
+import Floor from "./components/Floor.jsx";
+import Lights from "./components/Lights.jsx";
+import Steps from "./components/Steps.jsx";
+import Slopes from "./components/Slopes.jsx";
+import RoughPlane from "./components/RoughPlane.jsx";
+import RigidObjects from "./components/RigidObjects.jsx";
+import FloatingPlatform from "./components/FloatingPlatform.jsx";
+import DynamicPlatforms from "./components/DynamicPlatforms.jsx";
+import ShotCube from "./components/ShotCube.jsx";
 import { useControls } from "leva";
 import CharacterModel from "./CharacterModel.jsx";
-import SimpleTree from "../environment/plants/SimpleTree.jsx";
-import EffectsV2 from "./EffectsV2.jsx";
+import Forest from "../environment/scenes/Forest.jsx";
+import EffectsV2 from "./components/EffectsV2.jsx";
 import React, { useEffect, useState } from "react";
 
 export default function MovementDemo() {
@@ -115,37 +115,8 @@ export default function MovementDemo() {
         {/* Shoting cubes */}
         <ShotCube />
 
-        {/* Trees */}
-        <SimpleTree position={[10, 0, 10]} scale={0.9} />
-        <SimpleTree position={[-10, 0, 10]} scale={1.1} />
-        <SimpleTree position={[10, 0, -10]} scale={0.8} />
-        <SimpleTree position={[-10, 0, -10]} scale={1.2} />
-        <SimpleTree position={[15, 0, 5]} scale={0.7} />
-        <SimpleTree position={[-15, 0, -5]} scale={1.0} />
-        <SimpleTree position={[5, 0, 15]} scale={1.3} />
-        <SimpleTree position={[-5, 0, -15]} scale={0.9} />
-        <SimpleTree position={[20, 0, 8]} scale={1.1} />
-        <SimpleTree position={[-20, 0, 8]} scale={0.8} />
-        <SimpleTree position={[20, 0, -8]} scale={1.0} />
-        <SimpleTree position={[-20, 0, -8]} scale={1.2} />
-        <SimpleTree position={[8, 0, 20]} scale={0.9} />
-        <SimpleTree position={[-8, 0, 20]} scale={1.1} />
-        <SimpleTree position={[8, 0, -20]} scale={0.7} />
-        <SimpleTree position={[-8, 0, -20]} scale={1.3} />
-        <SimpleTree position={[12, 0, 12]} scale={1.0} />
-        <SimpleTree position={[-12, 0, 12]} scale={0.8} />
-        <SimpleTree position={[12, 0, -12]} scale={1.2} />
-        <SimpleTree position={[-12, 0, -12]} scale={0.9} />
-        <SimpleTree position={[18, 0, 3]} scale={1.1} />
-        <SimpleTree position={[-18, 0, 3]} scale={0.7} />
-        <SimpleTree position={[18, 0, -3]} scale={1.0} />
-        <SimpleTree position={[-18, 0, -3]} scale={1.3} />
-        <SimpleTree position={[3, 0, 18]} scale={0.8} />
-        <SimpleTree position={[-3, 0, 18]} scale={1.2} />
-        <SimpleTree position={[3, 0, -18]} scale={1.1} />
-        <SimpleTree position={[-3, 0, -18]} scale={0.9} />
-        <SimpleTree position={[25, 0, 0]} scale={1.0} />
-        <SimpleTree position={[-25, 0, 0]} scale={0.8} />
+        {/* Forest */}
+        <Forest />
       </Physics >
 
       <EffectsV2 />

@@ -5,7 +5,7 @@ export default function EffectsV2() {
     return (
         <>
             <EffectComposer>
-                <Bloom intensity={0.5} luminanceThreshold={1} />
+                {/* <Bloom intensity={0.5} luminanceThreshold={1} /> */}
                 {/*<Vignette eskil={false} offset={0.1} darkness={0.2} />*/}
             </EffectComposer>
         </>
