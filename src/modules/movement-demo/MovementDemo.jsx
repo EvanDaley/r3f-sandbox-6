@@ -15,7 +15,8 @@ import { useControls } from "leva";
 import CharacterModel from "./CharacterModel.jsx";
 import Forest from "../environment/scenes/Forest.jsx";
 import EffectsV2 from "./components/EffectsV2.jsx";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
+import { BirchTrees, OakTrees, CherryTrees } from "../foliage";
 
 export default function MovementDemo() {
   /**
@@ -117,6 +118,13 @@ export default function MovementDemo() {
 
         {/* Forest */}
         <Forest />
+
+        {/* Trees */}
+        <Suspense fallback={null}>
+          <BirchTrees />
+          <OakTrees />
+          <CherryTrees />
+        </Suspense>
       </Physics >
 
       <EffectsV2 />
